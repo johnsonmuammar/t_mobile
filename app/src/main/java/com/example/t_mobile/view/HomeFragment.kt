@@ -13,7 +13,6 @@ import com.example.t_mobile.viewModel.MainViewModel
 
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
-    private val TAG = "HomeFragment"
     private val mainVM by viewModels<MainViewModel>()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -23,9 +22,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             homeViewModel = mainVM
         }
         mainVM.apiState.observe(viewLifecycleOwner) { response ->
-            Log.d(TAG, "onViewCreated: api response = $response")
             if (response is ApiState.Success) {
-                Log.d(TAG, "onViewCreated: api success")
 
                 val action = response.cards?.let {
                     HomeFragmentDirections.actionHomeFragmentToCardsFragment(

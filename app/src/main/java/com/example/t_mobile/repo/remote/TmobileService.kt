@@ -1,4 +1,4 @@
-package com.example.t_mobile.remote
+package com.example.t_mobile.repo.remote
 
 
 import com.example.t_mobile.model.TmobileResponse

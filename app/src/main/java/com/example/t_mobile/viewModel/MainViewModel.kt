@@ -13,7 +13,7 @@ import kotlinx.coroutines.launch
 
 
 class MainViewModel : ViewModel() {
-    private val TAG = "MainViewModel"
+
     private val _apiState = MutableLiveData<ApiState<List<Card>?>>()
     val apiState: LiveData<ApiState<List<Card>?>>
         get() = _apiState

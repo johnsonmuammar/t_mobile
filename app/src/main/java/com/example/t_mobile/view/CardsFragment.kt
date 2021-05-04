@@ -16,10 +16,7 @@ class CardsFragment : Fragment(R.layout.fragment_cards) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         FragmentCardsBinding.bind(view).apply {
-            with(cardRv) {
-                layoutManager = LinearLayoutManager(context)
-                adapter = CardsAdapter(args.cards.toList())
-            }
+            cardRv.adapter = CardsAdapter(args.cards.toList())
         }
 
     }

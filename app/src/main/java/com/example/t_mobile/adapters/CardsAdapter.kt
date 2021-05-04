@@ -21,12 +21,7 @@ class CardsAdapter(
     override fun onBindViewHolder(
         holder: TrackViewHolder, position: Int
     ) = with(holder.binding) {
-        Glide.with(image.context)
-            .load(results[position].card?.image?.url.toString())
-            .into(image)
         card = results[position]
-
-
     }
 
     override fun getItemCount() = results.size
