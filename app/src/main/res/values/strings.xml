@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">t_mobile</string>
+    <string name="placeholder">Hellooooo World</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Welcome to the T-Mobile sample app</string>
+    <string name="response_btn_txt">Get Tmobile Response Objects</string>
+</resources>
